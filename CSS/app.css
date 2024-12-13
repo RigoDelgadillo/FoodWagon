@@ -1,0 +1,73 @@
+:root {
+    --OpenSans:"Open Sans", sans-serif;;
+    --SourceSans: "Source Sans 3", sans-serif;
+    --naranja: #F17228;
+    --amarillo: #FFB30E;
+    --negro: #000000;
+    --blanco: #fff;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+/* Navegador */
+.nav {
+    text-align: center;
+    justify-items: center;
+}
+@media (min-width : 768px) { 
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+    }
+}
+.nav__logo-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--SourceSans);
+    font-weight: bold;
+    color: var(--naranja);
+}
+.nav__logo-name span {
+    color: var(--amarillo);
+}
+.nav__direccion {
+    font-family: var(--OpenSans);
+}
+.nav__direccion span{
+    font-family: var(--SourceSans);
+    font-weight: bold;
+}
+
+.nav__btn-login a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--blanco);
+    padding: .7rem 1.5rem;
+    text-decoration: none;
+    border-radius: .8rem;
+    border: none;
+    box-shadow: 0px 5px 15px 0px var(--amarillo);
+    font-family: var(--SourceSans);
+    font-weight: bold;
+    color: var(--naranja);
+    font-size: 1.5rem;
+}
