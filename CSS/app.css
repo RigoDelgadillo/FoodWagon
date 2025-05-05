@@ -2,6 +2,7 @@
     --OpenSans:"Open Sans", sans-serif;;
     --SourceSans: "Source Sans 3", sans-serif;
     --naranja: #F17228;
+    --bg-naranja: #f172282d;
     --amarillo: #FFB30E;
     --negro: #000000;
     --blanco: #fff;
@@ -9,7 +10,27 @@
 html {
     font-size: 62.5%;
 }
+/* Estilos Estandar */
+.bg-orange {
+    background-color: var(--bg-naranja);
+    color: var(--naranja);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1px;
+    width: 13rem;
+}
+.bg-orange p {
+    margin: 0.5rem;
+    text-align: center;
+}
 
+@media (min-width : 768px){
+    .flex {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
 body {
     font-size: 1.6rem;
     padding: 0;
@@ -75,4 +96,52 @@ h2 {
     background-image: url("/img/Background.png");
     padding: 200px;
 }
+.target {
+    margin: 5rem;
+}
+.platillos-ofertas {
+    justify-items: center;
+    margin-top: 2rem;
+    font-family: var(--SourceSans);
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.imagen {
+    position: relative;
+    
+}
+.imagen-platillo img{
+    width: 30rem;
+    border-radius: 2rem;
+}
+.imagen-descuento img{
+    position: absolute;
+    bottom: 0.3rem;
+    border-bottom-left-radius: 2rem;
+    width: 40%;
+}
+@media (min-width : 600px) {
+    .target {
+        margin: auto;
+    }
+    .platillos-ofertas {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .imagen-platillo img{
+        width: 20rem;
+        
+    }
+}
+@media (min-width : 900px) {
+
+    .platillos-ofertas {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+
 
